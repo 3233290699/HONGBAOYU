@@ -22,7 +22,7 @@ body {
 .navbar{margin:0 !important; padding:0 !important;}
 .nav-link{line-height: 30px;}
 .navbar img{margin-top: 36px;}
-.navbar-nav{height:100px;background:#6e090b;max-width:200px; align-content: center;z-index: 9999;}
+.navbar-nav{height:280px;background:#6e090b;max-width:100px; align-content: center;z-index: 9999;}
 .footer {width:100%;
 	background:#450807;
 	height:127px;
