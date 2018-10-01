@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 250;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    background-color: #860000;
+}
+
+.container-fluid{margin: 0px;padding:0px;}
+
+.col-{
+    padding-right:15px;
+    padding-left:15px;}
+/*导航*/
+
+.nav {width:100%;background:#6e090b;}
+.navbar{margin:0 !important; padding:0 !important;}
+.nav-link{line-height: 30px;}
+.navbar img{margin-top: 36px;}
+.navbar-nav{height:100px;background:#6e090b;max-width:200px; align-content: center;z-index: 9999;}
+.footer {width:100%;
+	background:#450807;
+	height:127px;
+	align-content: center;
+	font: #e18c35;
+	margin-top: 40px;
+	border-bottom: #b76511 solid 1px;
+	border-top: #b76511 solid 1px;
+}
+.footer p{color:#e18c35;
+font-size: 0.875rem;}
+.banner{background: 
+	url(http://img.027cgb.com/586977/%E6%BE%B3%E9%97%A8%E5%A8%81%E5%B0%BC%E6%96%AF%E4%BA%BA/%E7%BA%A2%E5%8C%85%E9%9B%A8%E6%B4%BB%E5%8A%A8%E5%9B%BE%E7%89%87/bannner.gif);
+	background-size:cover;
+	background-position: center 0; 
+	max-width: 100%;
+	height: 693px;
+}
+.djs{background:rgba(98,77,64,0.2);
+	width:490px;
+	height: 165px;
+	
+    margin-top: 438PX;
+	z-index: 9998;
+}
+.down{height:auto;  }
+.nav-item{text-align: center;line-height:82px;}
+.nav-link{color: #FFFFFF;}
+.nav-link  ::hover{color: #Ffef659;}
+.announcement{
+	height: 40px; background:#1c1c1c;margin-top: 0px; }
+.btn {border:solid #d0a14e 1px;
+  background-image: -moz-linear-gradient( 0deg, rgb(164,8,8) 6%, rgb(175,8,8) 22%, rgb(185,8,8) 28%, rgb(195,13,13) 38%, rgb(204,18,18) 53%, rgb(185,8,8) 78%, rgb(175,8,8) 84%, rgb(164,8,8) 94%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(164,8,8) 6%, rgb(175,8,8) 22%, rgb(185,8,8) 28%, rgb(195,13,13) 38%, rgb(204,18,18) 53%, rgb(185,8,8) 78%, rgb(175,8,8) 84%, rgb(164,8,8) 94%);
+  background-image: -ms-linear-gradient( 0deg, rgb(164,8,8) 6%, rgb(175,8,8) 22%, rgb(185,8,8) 28%, rgb(195,13,13) 38%, rgb(204,18,18) 53%, rgb(185,8,8) 78%, rgb(175,8,8) 84%, rgb(164,8,8) 94%);
+  width: 364px;
+  height: 49px;
+text-align:center;
+
+	
+}
+.dropdown-menu{text-align:center;background:#6e090b; }
+.dropdown-menu li {text-align:center;padding: 4px;color:#FFFFFF; }
+.dropdown-menu li a {color:#FFFFFF;}
+/*表格*/
+table { 
+	background-color: #560101;
+  border:1px solid #732323; 
+  font-family: 微軟正黑體; 
+  font-size:16px; 
+  width:100%;
+  border:1px solid #732323;
+  text-align:center;
+  border-collapse:collapse;
+} 
+th { 
+  background-color: #560101;
+  padding:10px;
+  border:1px solid #732323;
+  color:#e18c35;
+  font-weight: bold;
+} 
+td { 
+  border:1px solid #732323;
+  padding:5px;
+}
+
+
+.lb_tit3 {
+	height: 60px;
+    width: 100%;
+    color: #e18c35;
+	text-align: center;
+    font-family: "微软雅黑";
+	font-weight: bold;
+	
+}
+.lb_tit3 p{
+	line-height: 60px;
+    display: inline-block;
+    width: 53px;
+    height: 60px;
+    background: url( image/times.png);
+    font-size: 30px;
+    color: #fff;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.djs p {font-size:30px;font-weight:bold;}
+	.btn{margin-left: 63px;}
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+	.banner
+	{background: url(image/bannner.gif);
+	background-size:cover;
+	background-position: center 0; 
+	max-width: 100%;
+	height: 346px;
+}
+   .clo p {font-size: 26px;
+        
+    }
+	.djs{
+		background:rgba(98,77,64,0.2);
+	width:245px;
+	height: 82px;
+    margin-top: 219PX;
+	z-index: 9998;
+}
+.djs p {font-weight:bold;}	
+	.ls{width: 100%;height: 100%;}
+.btn {border:solid #d0a14e 1px;
+  background-image: -moz-linear-gradient( 0deg, rgb(164,8,8) 6%, rgb(175,8,8) 22%, rgb(185,8,8) 28%, rgb(195,13,13) 38%, rgb(204,18,18) 53%, rgb(185,8,8) 78%, rgb(175,8,8) 84%, rgb(164,8,8) 94%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(164,8,8) 6%, rgb(175,8,8) 22%, rgb(185,8,8) 28%, rgb(195,13,13) 38%, rgb(204,18,18) 53%, rgb(185,8,8) 78%, rgb(175,8,8) 84%, rgb(164,8,8) 94%);
+  background-image: -ms-linear-gradient( 0deg, rgb(164,8,8) 6%, rgb(175,8,8) 22%, rgb(185,8,8) 28%, rgb(195,13,13) 38%, rgb(204,18,18) 53%, rgb(185,8,8) 78%, rgb(175,8,8) 84%, rgb(164,8,8) 94%);
+  width: 100%;
+  height: 50%;
+  text-align:center;
+  margin: 0 auto;
+}
+.lb_tit3 {
+	height: 30px;
+    width: 100%;
+    color: #e18c35;
+	text-align: center;
+    font-family: "微软雅黑";
+	font-weight: bold;
+    line-height: 30px;
+	margin-top: 10px;
+}
+.lb_tit3 p{
+	line-height: 30px;
+    display: inline-block;
+    width: 26px;
+    height: 30px;
+    background: url( image/times.png);
+	 background-size:100% 100%;
+    font-size: 15px;
+    color: #fff;
+	text-align: center;
+}
+
+	.f{display: block;
+        margin-top:20px; 
+		background-color:#450807;
+		border-top: #b76511 solid 1px;
+		border-bottom: #b76511 solid 1px;
+	}
+	.f p {
+	   color: #e18c35;
+	}
+/*导航*/
+.nav{display: none;}
+	
+}

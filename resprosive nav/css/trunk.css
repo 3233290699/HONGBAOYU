@@ -1,0 +1,333 @@
+body {
+    background-color: #000;
+    font: 12px/1.5em Abel;
+    color: #6b7b83;
+    text-rendering: optimizelegibility;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -moz-text-size-adjust: none;
+    -moz-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+}
+.device, .main, .sub-info, .footer {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+header {
+    height: 0;
+    position: relative;
+    background-color: #243640;
+}
+header h1 {
+    visibility: hidden;
+}
+.burger {
+    display: none;
+    position: absolute;
+    float: left;
+    padding: 10px;
+    top: 4px;
+    left: 10px;
+}
+.burger li {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    background-color: #e9eff2;
+    margin-bottom: 250px;
+}
+nav {
+    position: relative;
+    width: 405px;
+    margin: 0 auto;
+    z-index: 1;
+    top: 40px;
+    left: -1px;
+}
+nav li {
+    display: inline-block;
+    float: left;
+}
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 15px 3px;
+    margin-right: 12px;
+    margin-left: 12px;
+    font: 15px OswaldBook;
+}
+nav li a:hover {
+    color: #dde79d;
+}
+nav li a.logo {
+    width: 46px;
+    height: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+    background-size: 224px 114px!important;
+    background: url(../img/logo.png) no-repeat -135px -64px;
+    margin-top: -2px;
+}
+.content {
+    position: relative;
+    padding: 0;
+}
+.content ul.responsive {
+    position: relative;
+    background-color: #e9eff2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+}
+@media only screen and (max-width: 780px) {
+    .container {
+        background-color: #000;
+        margin-bottom: 0;
+    }
+    header {
+        position: fixed;
+        height: 60px;
+        z-index: 2;
+        /* starting point */
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    header h1 {
+        text-align: center;
+        color: #ffffff;
+        font: 27px/61px OswaldBold;
+        text-shadow: 0 1px 0 #cb0a01;
+        visibility: visible;
+    }
+    .burger {
+        display: block;
+    }
+    .burger.open li {
+        background-color: #ffbeb9;
+    }
+    nav ul {
+        height: 100%;
+        overflow-y: auto;
+    }
+    nav li {
+        display: block;
+        float: none;
+    }
+    nav li a {
+        padding: 23px 25px;
+        margin: 0;
+        letter-spacing: 3px;
+    }
+    nav li a.logo {
+        display: none;
+    }
+    nav li a.active {
+        color: #ff7469;
+        background-color: #141e23;
+    }
+    nav li a:hover {
+        color: #ff7469;
+        background-color: #19252c;
+        border-bottom: none;
+        padding-bottom: 23px;
+    }
+    nav li:first-child a.active, nav li:first-child a:hover {
+        border-radius: 10px 0 0 0;
+    }
+    /* NAVIGATION ANNIMATION */
+    nav {
+        width: 93%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 0;
+        background-color: #1d2d35;
+        border-radius: 8px;
+        /* starting point */
+        opacity: .3;
+        -webkit-transform: translate3d(5%, 0, 0)scale(.97);
+        -moz-transform: translate3d(5%, 0, 0)scale(.97);
+        transform: translate3d(5%, 0, 0)scale(.97);
+    }
+    /*Nav Expanding Open Effect*/
+    nav.open {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0)scale(1);
+        -webkit-animation: slideIn .35s ease-in-out;
+        -moz-transform: translate3d(0, 0, 0)scale(1);
+        -moz-animation: slideIn .35s ease-in-out;
+        transform: translate3d(0, 0, 0)scale(1);
+        animation: slideIn .35s ease-in-out;
+    }
+    @-webkit-keyframes slideIn {
+        0% {
+            opacity: .3;
+            -webkit-transform: translate3d(5%, 0, 0)scale(.97);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0)scale(1);
+        }
+    }
+    @-moz-keyframes slideIn {
+        0% {
+            opacity: .3;
+            -moz-transform: translate3d(5%, 0, 0)scale(.97);
+        }
+        100% {
+            opacity: 1;
+            -moz-transform: translate3d(0, 0, 0)scale(1);
+        }
+    }
+    @keyframes slideIn {
+        0% {
+            opacity: .3;
+            transform: translate3d(5%, 0, 0)scale(.97);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)scale(1);
+        }
+    }
+    /*Nav Shrinking Closed Effect*/
+    nav.close {
+        opacity: .3;
+        -webkit-transform: translate3d(5%, 0, 0)scale(.97);
+        -webkit-animation: slideOut .3s ease-in-out;
+        -moz-transform: translate3d(5%, 0, 0)scale(.97);
+        -moz-animation: slideOut .3s ease-in-out;
+        transform: translate3d(5%, 0, 0)scale(.97);
+        animation: slideOut .3s ease-in-out;
+    }
+    @-webkit-keyframes slideOut {
+        0% {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0)scale(1);
+        }
+        100% {
+            opacity: .3;
+            -webkit-transform: translate3d(5%, 0, 0)scale(.97);
+        }
+    }
+    @-moz-keyframes slideOut {
+        0% {
+            opacity: 1;
+            -moz-transform: translate3d(0, 0, 0)scale(1);
+        }
+        100% {
+            opacity: .3;
+            -moz-transform: translate3d(5%, 0, 0)scale(.97);
+        }
+    }
+    @keyframes slideOut {
+        0% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0)scale(1);
+        }
+        100% {
+            opacity: .3;
+            transform: translate3d(5%, 0, 0)scale(.97);
+        }
+    }
+    /* CONTENT ANNIMATION */
+    .content {
+        /* starting point */
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        z-index: 1;
+    }
+    /*Content Sliding Open Effect*/
+    header.open, .content.open {
+        -webkit-transform: translate3d(240px, 0, 0);
+        -webkit-animation: open .5s ease-in-out;
+        -moz-transform: translate3d(240px, 0, 0);
+        -moz-animation: open .5s ease-in-out;
+        transform: translate3d(240px, 0, 0);
+        animation: open .5s ease-in-out;
+    }
+    @-webkit-keyframes open {
+        0% {
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+        70% {
+            -webkit-transform: translate3d(260px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(240px, 0, 0);
+        }
+    }
+    @-moz-keyframes open {
+        0% {
+            -moz-transform: translate3d(0, 0, 0);
+        }
+        70% {
+            -moz-transform: translate3d(260px, 0, 0);
+        }
+        100% {
+            -moz-transform: translate3d(240px, 0, 0);
+        }
+    }
+    @keyframes open {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        70% {
+            transform: translate3d(260px, 0, 0);
+        }
+        100% {
+            transform: translate3d(240px, 0, 0);
+        }
+    }
+    /*Content Sliding Closed Effect*/
+    header.close, .content.close {
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-animation: close .3s ease-in-out;
+        -moz-transform: translate3d(0, 0, 0);
+        -moz-animation: close .3s ease-in-out;
+        transform: translate3d(0, 0, 0);
+        animation: close .3s ease-in-out;
+    }
+    @-webkit-keyframes close {
+        0% {
+            -webkit-transform: translate3d(240px, 0, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+    }
+    @-moz-keyframes close {
+        0% {
+            -moz-transform: translate3d(240px, 0, 0);
+        }
+        100% {
+            -moz-transform: translate3d(0, 0, 0);
+        }
+    }
+    @keyframes close {
+        0% {
+            transform: translate3d(240px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
