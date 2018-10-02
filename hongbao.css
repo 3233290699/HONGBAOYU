@@ -17,12 +17,44 @@ body {
     padding-right:15px;
     padding-left:15px;}
 /*导航*/
-
+.small-nav{height: 48px;}
+.navbar-brand1 {position:relative;text-align: center;display: block;margin: 0 auto; overflow: visible;}
 .nav {width:100%;background:#6e090b;}
 .navbar{margin:0 !important; padding:0 !important;}
-.nav-link{line-height: 30px;}
+.dropdown-item{line-height: 30px;}
+.dropdown-menu a {color: #FFFFFF; }
+.dropdown-menu{background:#6e090b;max-width:60px; align-content: center;}
+ .dropdown-toggle{ 
+	 position: absolute;
+	 top:4px;
+	float: right;
+	border: none;
+  background: none;
+} 
+ .dropdown-toggle::after { 	
+    display:none ;
+	 background: none;
+} 
 .navbar img{margin-top: 36px;}
-.navbar-nav{height:280px;background:#6e090b;max-width:100px; align-content: center;z-index: 9999;}
+/*滚动*/
+.notice{
+                  margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 50s linear infinite;
+        }
+
+        .notice:hover {
+            animation-play-state: paused
+        }
+
+        /* Make it move */
+        @keyframes marquee {
+            0%   { text-indent: 27.5em }
+            100% { text-indent: -105em }
+        }
+/* */
 .footer {width:100%;
 	background:#450807;
 	height:127px;
@@ -32,10 +64,11 @@ body {
 	border-bottom: #b76511 solid 1px;
 	border-top: #b76511 solid 1px;
 }
+
 .footer p{color:#e18c35;
 font-size: 0.875rem;}
 .banner{background: 
-	url(http://img.027cgb.com/586977/%E6%BE%B3%E9%97%A8%E5%A8%81%E5%B0%BC%E6%96%AF%E4%BA%BA/%E7%BA%A2%E5%8C%85%E9%9B%A8%E6%B4%BB%E5%8A%A8%E5%9B%BE%E7%89%87/bannner.gif);
+	url(https://www.hbvm6.com/images/header.gif?v=3);
 	background-size:cover;
 	background-position: center 0; 
 	max-width: 100%;
@@ -118,7 +151,7 @@ td {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
 	.banner
-	{background: url(image/bannner.gif);
+	{background: url(https://www.hbvm6.com/images/header.gif?v=3);
 	background-size:cover;
 	background-position: center 0; 
 	max-width: 100%;
@@ -178,5 +211,6 @@ td {
 	}
 /*导航*/
 .nav{display: none;}
+	.navbar-brand1{width:180px;}
 	
 }
